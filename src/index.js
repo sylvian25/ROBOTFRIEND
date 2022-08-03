@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.js';
-import RegisterServiceWorker from './RegisterServiceWorker'
+// import RegisterServiceWorker from './RegisterServiceWorker'
 
 import Card from './Card';
 import 'tachyons';

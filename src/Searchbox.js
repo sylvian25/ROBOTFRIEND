@@ -4,20 +4,21 @@ import React, { StrictMode, useState } from 'react'
 // import Card from './Card';
 import 'tachyons';
 
-const Searchbox = ({Onsearch}) => {
-    const [search, setsearch] = useState('')
+const Searchbox = ({Onsearch,search,setsearch}) => {
     return(
         <>
         <div className='pa2'>
+            <form>
      <input 
      className='pa3 ba b--green bg-light-blue'
      type='search'
      value={search}
       placeholder='search robots'   onChange={(e)=>{
           setsearch(e.target.value)
-          Onsearch(search)
+            Onsearch()
       }}/>
       
+      </form>
      </div>
      </>
     );
